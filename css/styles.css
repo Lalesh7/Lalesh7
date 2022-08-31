@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Homemade+Apple&display=swap');
+
+/* Homepage */
+/* body declaration  */
+
+body {
+    font-family: "Montserrat,sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #413839;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+* {
+    outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* heading tags */
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family:"Montserrat,sans-serif";
+    font-weight: 850;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* paragraph tag */
+p {
+    margin: 0 0 1rem;
+    font-family:"Montserrat,sans-serif";
+}
+.button{
+    border: none;
+    background-color: #F0A400;
+    color: white;
+    padding: 13px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Montserrat,sans-serif";
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1{
+    border: none;
+    background-color: #38C179;
+    color: white;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Montserrat,sans-serif";
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+/* hero section */
+
+#header-hero-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+#header-hero-container header {
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(60, 60, 60, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: yellow;
+    text-decoration: none;
+    position: relative;
+    top: 4px;
+}
+#nav-toggle{
+    color: #000000;
+}
+ /* menu section */
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid rgb(14, 3, 3);
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: white;
+    margin: 4px 0;
+}
+ /* header section */
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#close-flyout {
+    display: none;
+}
+
+#header-hero-container header ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#header-hero-container header ul.is-sticky li a {
+    color: white;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: yellow;
+}
+
+header ul.is-sticky li a:hover,
+
+header ul.is-sticky li a.active {
+    color: orange;
+}
+
+ /* hero section */
+#hero {
+    background: url('../images/businessman-pointing-graphs-symbols.jpg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#hero .fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(6, 68, 68, 0.6); */
+    z-index: 1;
+    background-color: black;
+    opacity: 0.4;
+}
+
+ .hero-text {
+    position: absolute;
+    top: 50%;
+    margin: -75px auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    width: 500px;
+    text-align: center;
+}
+
+#hero .hero-text p {
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* staff sections */
+#staff {
+    margin: 4rem 0 0rem;
+    height: 500px;
+    padding: 0 0 4rem;
+    border-bottom: 1px solid white;
+}
+
+#staff .flex {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#staff .card {
+    position: center;
+    width: 49%;
+    background: white;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+    height: 230px;
+}
+
+#staff .card img {
+    width: 20%;
+    align-items: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#staff .card h3 {
+    font-family: "Montserrat",sans-serif;
+    color: black;
+}
+
+#staff .card h3,
+#staff .card p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* about company section */
+#about-company {
+    margin: 4rem 0 0rem;
+    padding: 0 0 4rem;
+    border-bottom: 1px solid white;
+}
+#about-company img{
+    opacity: 70%;
+}
+
+#about-company .flex > img {
+    width: 47%;
+}
+
+#about-company .flex > div {
+    width: 40%;
+}
+#about-company .flex h2{
+    margin-top: -10px;
+}
+
+#about-company ul {
+    padding-left: 20px;
+    margin-bottom: 4rem;
+}
+
+#about-company ul li {
+    margin: 10px 0;
+}
+
+
+/* working-steps section */
+
+#working-steps {
+    border-bottom: 1px solid white;
+    background-color: #0072b2;
+    background: url(../images/business-people-casual-meeting1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    height: 310px;
+}
+#working-steps .material-icons{
+    font-size: 120px;
+    color: #007bff;
+}
+#working-steps .flex-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#working-steps .flex-container .container1{
+    flex: 25%;
+}
+#working-steps .flex-container .container2{
+    flex: 25%;
+}
+#working-steps .flex-container .container3{
+    flex: 25%;
+}
+#working-steps .flex-container .container4{
+    flex: 25%;
+}
+
+#working-steps .flex-container .container1 .icon-button{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+}
+#working-steps .flex-container .container2 .icon-button1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+}
+#working-steps .flex-container .container3 .icon-button2{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+#working-steps .flex-container .container4 .icon-button3{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.icon-button:hover{
+    cursor: pointer;
+}
+.icon-button1:hover{
+    cursor: pointer;
+}
+.icon-button2:hover{
+    cursor: pointer;
+}
+.icon-button3:hover{
+    cursor: pointer;
+}
+
+#working-steps .flex-container .container1 .icon-button:active{
+    background: black;
+}
+#working-steps .flex-container .container2 .icon-button1:active{
+    background: #260202;
+}
+#working-steps .flex-container .container3 .icon-button2:active{
+    background: #260202;
+}
+#working-steps .flex-container .container4 .icon-button3:active{
+    background: #260202;
+}
+
+
+.icon-button__badge{
+    position:absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+#working-steps h3{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 2em;
+    font-size: 25px;
+}
+
+
+/*Skills Sections*/
+
+#skills {
+    background-color: white;
+    border-bottom: 1px solid white;
+    padding-top: 3%;
+}
+#skills .flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+#skills .flex-container .image{
+    flex: 33.33%;
+    flex-basis: 33.33%;
+}
+#skills .flex-container img{
+    max-width: 100%;
+    height: 330px;
+}
+#skills .flex-container .startup{
+    flex: 33.33%;
+}
+/* #skills .flex-container .startup p{
+    text-align: justify;
+} */
+#skills .flex-container .skills_we_count{
+    flex: 33.33%;
+}
+
+.skills{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+}
+ .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+ .skill-name{
+    margin-left: -190px;
+}
+
+ .skill-bar{
+    height: 14px;
+    background: white;
+    border-radius: 3px;
+
+}
+ .skill-per{
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+ #skills .startup{
+    padding-bottom: 20px;
+}
+
+ /*Start Business Section*/
+
+.start-business{
+    margin: 4rem 0 6rem;
+    padding: 0 0 2rem;
+    background-color:  #007BFF;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.start-business .start_business_h1 h1{
+    color: white;
+    margin-left: 10%;
+}
+
+.start-business .business_button .start_button{
+    background-color: #f47d34;
+    height: 52px;
+    font-size: 19px;
+    width: 138px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: "Montserrat,sans-serif";
+}
+
+.start-business .start_business_h1{
+    flex: 50%;
+}
+
+.start-business .business_button{
+    flex: 50%;
+}
+
+
+ 
+
+
+ /*Footer Section*/
+footer{
+    background: #1b1813;
+    padding: 2rem 0;
+}
+footer .flex{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #777;
+}
+
+footer h5{
+    color: white;
+    margin-bottom: 1rem;
+    /* font-size: medium; */
+}
+footer .footer-about {
+    width: 25%;
+  }
+  footer .footer-about p{
+    width: 65%;
+    color: white;
+  }
+
+  footer.footer-useful-links{
+    width: 10%;
+  }
+  footer .footer-useful-links ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .footer-useful-links ul li {
+    margin: 10px 0;
+  }
+
+  footer .footer-useful-links ul li a {
+    color: rgb(235, 223, 223);
+    text-decoration: none;
+  }
+
+  footer .footer-useful-links ul li a:hover{
+    color: yellow;
+  }
+
+  footer .footer-what-we-do{
+    width: 10%;
+  }
+  footer .footer-what-we-do ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  footer .footer-what-we-do ul li{
+    margin: 10px 0;
+    color: rgb(235, 223, 223);
+  }
+  
+  footer .footer-what-we-do ul li:hover{
+    cursor: pointer;
+    color: yellow;
+  }
+
+footer .footer-newsletter{
+    width: 20%;
+    right: 200px;
+}
+footer .footer-newsletter h5{
+    position: relative;
+    left: 20px;
+
+}
+
+#newsletter.container{
+    position: relative;
+}
+footer .footer-newsletter input{
+    border-radius: 30px;
+    height: 43px;
+    margin: 10px;
+    font-family: "Montserrat",sans-serif;
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 80%;
+
+}
+footer small{
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+footer small:hover{
+    color:#fff;
+}
+
+
+
+/* Media Queries section */
+
+
+/* media queries of all components */
+
+@media (max-width: 991px) {
+    #logo {
+        top: 1px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #007bff;
+        right: -100%;
+        top: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100%;
+        width: 300px;
+        box-sizing: border-box;
+        box-shadow: 5px 0 10px 3px #999;
+    }
+
+    #close-flyout {
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        font-size: 30px;
+        color: #ff0000;
+        cursor: pointer;
+        display: block;
+        line-height: 1;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: #212529;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #f69314;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .flex_containers {
+        flex-direction: column;
+    }
+    #skills .flex-container {
+        flex-direction: column;
+    }
+    #working-steps .flex-container{
+        flex-direction: column;
+    }
+    .start-business {
+        flex-direction: column;
+      }
+}
+
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    #hero .hero-text {
+        width: 400px;
+    }
+
+    #staff .card {
+        width: 49%;
+    }
+}
+
+@media (max-width: 500px) {
+    #hero .hero-text {
+        width: 330px;
+    }
+    .button1{
+        margin-left: 25px;
+    }
+
+    #staff {
+        margin: 4rem 0 3rem;
+        padding: 0 0 3rem;
+        height: 1300px;
+    }
+
+    #staff .card {
+        width: 100%;
+    }
+    #leader{
+        height: 600px;
+        border: 1px solid white;
+        display: flex;
+    }
+    #paragraph{
+        height: 40%;
+    }
+    #leader #check{
+        margin-left: 20px;
+        height: 40%;
+    }
+    .belief .content .box{
+        margin-left: 6rem;
+    }
+    #about-company h2{
+        margin-left: 1px;
+    }
+    #about-company .flex-container{
+        flex-direction: column;
+    }
+    #start-business .button{
+        margin-left: 90px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    #working-steps{
+        height: 730px;
+        margin-bottom: 55px;
+    }
+    #working-steps .flex-container .container1{
+        margin: 5px;
+    }
+    #working-steps .flex-container .container2{
+        margin: 5px;
+    }
+    #working-steps .flex-container .container3{
+        margin: 5px;
+    }
+    #working-steps .flex-container .container4{
+        margin: 5px;
+    }
+    #skills .flex-container .skills_we_count{
+        margin-left: 70px;
+        max-width: 75%;
+    }
+    #skills .flex-container .skills_we_count h1{
+        margin-left: -40px;
+    }
+    #leader .contents{
+        flex-direction: column;
+    }
+    .footer .footer-useful-links{
+        margin-left: 2px;
+    }
+    
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+   
+    
+}
